@@ -1,0 +1,26 @@
+version: '3.8'
+
+networks:
+  default:
+    name: cow-todo
+
+volumes:
+  data:
+    driver: local
+  config:
+    driver: local
+
+services:
+  db:
+    image: mysql:8.0.29
+    container_name: cow-mysql
+    ports:
+      - 3304:3306
+    volumes:
+      - data:/var/lib/mysql
+      - config:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: cowtodo
+    platform: linux/x86_64
+    restart: always
