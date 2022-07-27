@@ -33,7 +33,7 @@ export class TodoController {
   @Patch('/:id')
   async updateTodo(
     @Param('id') id: number,
-    @Body() todoDto: TodoDto,
+    @Body() todoDto: TodoDto
   ): Promise<void> {
     return await this.todoService.updateTodo(id, todoDto);
   }
