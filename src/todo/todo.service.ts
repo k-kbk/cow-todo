@@ -44,7 +44,6 @@ export class TodoService {
     if (!data) {
       throw new BadRequestException();
     }
-    console.log(!data.isCompleted);
     await this.todoRepository.update(id, { isCompleted: !data.isCompleted });
     return !data.isCompleted;
   }
