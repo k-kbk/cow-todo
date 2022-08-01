@@ -24,6 +24,9 @@ npm install
 npm run start
 ```
 
+## Host
+http://localhost:3000
+
 ## API
 
 <details>
