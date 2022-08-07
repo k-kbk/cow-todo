@@ -45,12 +45,6 @@ http://localhost:5000
 
   `GET`
 
-- **Data Params**
-
-  **Required:**
-
-  `content : todo 내용`
-
 - **Success Response:**
 
   ```
@@ -85,11 +79,12 @@ Todo 정보를 추가합니다.
 
   `POST`
 
-- **Data Params**
-
-  **Required:**
-
-  `content : todo 내용`
+- **Request Body**
+  ```json
+  {
+    "content" : "새로운 Todo" // 새로운 Todo 내용을 넣어줍니다.
+  }
+  ```
 
 - **Success Response:**
   ```
@@ -112,12 +107,13 @@ Todo 정보를 추가합니다.
 
   `PATCH`
 
-- **Data Params**
-
-  **Required:**
-
-  `content : todo 내용`
-
+- **Request Body**
+  ```json
+  {
+    "content" : "새로운 Todo(수정)" // 수정 될 Todo 내용을 넣어줍니다.
+  }
+  ```
+  
 - **Success Response:**
   ```
   HTTP/1.1 200 OK
