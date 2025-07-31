@@ -110,7 +110,7 @@ Todo 정보를 추가합니다.
 - **Request Body**
   ```json
   {
-    "content" : "새로운 Todo(수정)" // 수정 될 Todo 내용을 넣어줍니다.
+    "content" : "새로운 Todo(수정)" // 수정할 Todo 내용을 넣어줍니다.
   }
   ```
   
