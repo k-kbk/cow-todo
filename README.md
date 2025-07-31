@@ -1,6 +1,6 @@
 # COW Todo Server
 
-Coin On Web 학회 Todo 사이트용 Server
+COW 학회 Todo 사이트용 Server
 
 ## 사용법
 
